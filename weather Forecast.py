@@ -1,6 +1,6 @@
 import requests
 city_or_zip = input("Enter a city name or a ZIP code: ")
-api_key = 'a47ba4a835eb6b1ff08cc3db457a7cd1'
+api_key = 'YOUR_API_KEY'
 url = f"http://api.openweathermap.org/data/2.5/weather?q={city_or_zip}&appid={api_key}&units=metric"
 response = requests.get(url)
 weather_data = response.json()
